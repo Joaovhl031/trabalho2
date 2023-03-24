@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <link rel="stylesheet" typ="text/css" href="css/style.css"/>
-    <script type="text/javascript" src="js/script.js"></script>
-    <link rel="icon" type="image/x-icon" href="img/metalhead.png"/>
+    <link rel="stylesheet" typ="text/css" href="css/style.css" />
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/metalhead.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login - Organizador Pessoal</title>
 </head>
+
 <body id="login_page">
     <div class="container">
         <header class="top_page">
-            
         </header>
         <main class="content">
             <div class="login_content">
                 <div class="login_left"></div>
                 <div class="login_center">
-                <div class="avatar_profile">
-                    <img src="img/avatar.jpg" id="img_perfil">
-                </div>
-                <div>
-                    <div class="form_login">
-                        <form id="form_login">
-                            <label for="email">email:</label><input type="email" placeholder="digite o seu login" id="email"></br>
-                            <label for="senha">senha</label><input type="password" placeholder="digite sua senha" id="senha"></br>
-                            <button id="button_login">submit</button>
-                        </form>
+                    <div class="avatar_profile">
+                        <img src="img/avatar.jpg" id="img_perfil">
+                    </div>
+                    <div class="Logintxt">
+                        <h2>Login</h2>
+                    </div>
+                    <div>
+                        <div class="form_login">
+                            <form id="form_login">
+                                <label for="email">E-mail:</label></br><input type="email" placeholder="SeuEmail@gmail.com"
+                                    id="email"></br>
+                                <label for="senha">Senha:</label></br><input type="password" placeholder="Digite sua senha"
+                                    id="senha"></br>
+                                <button id="button_login" type="submit" onclick="ValidarLogin()">submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="login_right"></div>
             </div>
         </main>
@@ -39,4 +45,5 @@
         </footer>
     </div>
 </body>
+
 </html>
